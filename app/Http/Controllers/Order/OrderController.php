@@ -26,7 +26,9 @@ class OrderController extends Controller
         $rules = [
            'ordernum' => 'required|min:2|max:20',
            'name' => 'required|min:3',
-           'address' => 'required|min:3'
+           'address' => 'required|min:3',
+            'date'=>'required',
+            'price'=>'required',
        ];
        $validator = Validator::make($req->all(), $rules);
         if($validator->fails()){
@@ -40,7 +42,9 @@ class OrderController extends Controller
         $rules = [
             'ordernum' => 'required|min:2|max:20',
             'name' => 'required|min:3',
-            'address' => 'required|min:3'
+            'address' => 'required|min:3',
+            'date'=>'required',
+            'price'=>'required',
         ];
         $validator = Validator::make($req->all(), $rules);
         if($validator->fails()){
