@@ -13,14 +13,13 @@ class CreateOrderModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('country_lang', function (Blueprint $table) {
+        Schema::create('order_models', function (Blueprint $table) {
             $table->bigIncrements('id');
-        $table->string('ordernum' );
-        $table->string('address');
-        $table->decimal('price');
-        $table->string('name');
-        $table->date('date');
-            //$table->timestamps();
+            $table->string('ordernum' );
+            $table->string('address');
+            $table->decimal('price');
+            $table->string('name');
+            $table->timestamp('date');
         });
     }
 

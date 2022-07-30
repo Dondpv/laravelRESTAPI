@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class OrderModel extends Model
 {
-    protected $table= "country_lang";
+    protected $table= "order_models";
     public $timestamps = false;
     protected $fillable=[
         'id',
@@ -14,7 +14,6 @@ class OrderModel extends Model
         'name',
         'address',
         'price',
-        'date'
-    ];
-
+         'date'
+        ];
 }
